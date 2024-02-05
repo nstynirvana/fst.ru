@@ -1,0 +1,216 @@
+body {
+    --mfn-tabs-border-width: 1px;
+}
+
+html,body{overflow-x:hidden}
+
+/* > 1240 ------------------------------------------------------------------------------------------------------------- > 1240 */
+
+@media only screen and (min-width: 1240px)
+{
+    .layout-boxed{padding:25px}
+    .layout-boxed.boxed-no-margin{padding:0;}
+    #Top_bar.loading{display:none}
+
+    .hover_color:hover .hover_color_bg,.hover_color.hover .hover_color_bg{background-color:inherit!important;border-color:inherit!important}
+}
+
+
+/* #Header Creative always Open	1240 - 1489 ----------------------------------------- #Header Creative always Open 1240 - 1489 */
+
+@media only screen and (min-width: 1240px) and (max-width: 1489px)
+{
+    body.header-open{min-width:0;}
+    .header-open #Wrapper{max-width:960px;}
+
+    .section_wrapper,
+    .header-open .container,
+    .header-open.with_aside .content_wrapper{max-width:940px;}
+
+    .section_wrapper{max-width:100%;}
+
+    /* -------------------- */
+
+    /* Error 404 */
+    .header-open #Error_404 .error_pic i{font-size:220px;line-height:260px}
+    .header-open #Error_404 .error_desk{padding-top:40px}
+
+    /* Google maps */
+    .header-open .section.full-width .wrap.one .column_map.one .google-map-contact-wrapper{left:auto;right:50px;}
+
+    /* Offer slider */
+    .header-open .offer .offer_li .desc_wrapper{width:436px;width:calc(50% - 42px)}
+
+    /* Portfolio list */
+    body.header-open:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-wrapper{width:921px}
+
+    /* Recent posts */
+    .header-open .Recent_posts ul li .desc{margin-right:60px}
+    .header-open .Recent_posts ul li .photo{width:60px;height:60px}
+    .header-open .Recent_posts ul li .photo .c{width:20px;height:20px;line-height:20px;bottom:5px;right:-8px}
+}
+
+
+/* < 1240 ------------------------------------------------------------------------------------------------------------- < 1240 */
+
+@media only screen and (max-width: 1239px)
+{
+    /* iOS phone number linking */
+    a[href^=tel]{color:inherit;text-decoration:none}
+
+    /* Hover Effect */
+    .no-hover-tablet a.button:after,.no-hover-tablet a.tp-button:after,.no-hover-tablet button:after,.no-hover-tablet input:after{display:none}
+    .no-hover-tablet .image_frame .image_wrapper img{top:0!important}
+    .no-hover-tablet .image_frame:not(.no_link) .image_wrapper img:not(.ls-l){margin-bottom:0!important}
+    .no-hover-tablet .image_frame .image_wrapper .mask,.no-hover-tablet .image_frame .image_wrapper .image_links{display:none!important}
+    .no-hover-tablet .Recent_posts ul li .desc:after{display:none}
+    .no-hover-tablet .Recent_posts ul li a:hover h6,.no-hover-tablet .Recent_posts ul li a:hover .desc .date{color:inherit!important}
+
+    body:not(.no-hover-tablet) .hover_color:hover .hover_color_bg,
+    body:not(.no-hover-tablet) .hover_color.hover .hover_color_bg{background-color:inherit!important;border-color:inherit!important}
+
+    /* Portfolio masonry hover */
+    .with_aside .portfolio_group.masonry-hover .portfolio-item:not(.no-thumbnail) .masonry-hover-wrapper .hover-desc .desc-inner .desc-wrapper{display:none}
+
+    /* Section Background Image */
+    .no-section-bg-tablet .section{background-image:none!important}
+
+    /* Google maps */
+    .section.full-width .wrap.one .column_map.one .google-map-contact-wrapper{left:auto;right:50px;}
+}
+
+
+/* #Desktop	960 - 1239 ---------------------------------------------------------------------------------- #Desktop	960 - 1239 */
+
+
+
+/* #Desktop	> 960 -------------------------------------------------------------------------------------------- #Desktop	> 960 */
+
+
+
+/* #Tablet (Portrait) & Mobile (Landscape) 480 - 768 ----------------------- #Tablet (Portrait) & Mobile (Landscape) 480 - 768 */
+
+@media only screen and (min-width: 480px) and (max-width: 767px)
+{
+    /* Respond */
+    #respond .comment-form-author{width:100%;margin-right:0;float:none}
+    #respond .comment-form-email{width:100%;margin-right:0;float:none}
+    #respond .comment-form-url{width:100%;float:none;clear:both;}
+    #respond input[type="text"],#respond input[type="password"],#respond input[type="email"],#respond select{width:100%}
+    #respond .comment-form-comment textarea{width:100%}
+    #respond .required{right:15px}
+    #comments .commentlist > li .comment-body{margin-left:90px;padding:10px}
+    #comments .commentlist > li .photo{left:-90px}
+    #comments .commentlist > li .children{margin-left:0;padding-left:10px}
+    #comments .commentlist > li .reply{right:10px;top:10px}
+    #comments .commentlist > li .comment-meta a.comment-edit-link{padding-right:45px}
+    .rtl #comments .commentlist > li .comment-body{margin-left:0;margin-right:90px}
+    .rtl #comments .commentlist > li .photo{left:auto;right:-90px}
+    .rtl #comments .commentlist > li .children{margin-right:0;padding-left:0;padding-right:10px}
+    .rtl #comments .commentlist > li .reply{left:10px;right:auto}
+    .rtl #comments .commentlist > li .comment-meta a.comment-edit-link{padding-left:45px;padding-right:0}
+
+    /* Zoom Box */
+    .zoom_box .desc .desc_txt{font-size:18px;line-height:22px}
+
+    /* Gallery */
+    #Content .gallery:not(.gallery-columns-1) .gallery-item{width:50%;clear:none}
+    #Content .gallery:not(.gallery-columns-1) .gallery-item:nth-of-type(2n+1){clear:both}
+
+    /* Latest News */
+    .Latest_news.featured ul{width:49%!important}
+}
+
+
+/* #Mobile (Portrait) < 480 ------------------------------------------------------------------------- #Mobile (Portrait) < 480 */
+
+@media only screen and (min-width: 448px) and (max-width: 500px)
+{
+    .blog_slider a.kill_the_icon .button_icon{display:none;}
+}
+
+@media only screen and (max-width: 479px)
+{
+    /* Post nav */
+    .post-nav{padding:10px 10px 4px}
+
+    /* Portfolio list */
+    body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-wrapper{width:260px}
+
+    /* Portfolio Masonry Flat */
+    .portfolio_group.masonry-flat .portfolio-item,.portfolio_group.masonry-flat .portfolio-item.wide{width:100%!important}
+
+    /* Latest News */
+    .Latest_news.featured ul{width:100%!important}
+
+    /* Filters */
+    #Filters .filters_buttons li{margin-right:10px}
+    #Filters .filters_buttons li.label{display:none}
+    #Filters .filters_buttons li i.icon-docs,#Filters .filters_buttons li i.icon-tag{display:none}
+
+    /* Team */
+    .team.team_horizontal .image_frame{width:100%;margin:0 0 15px;float:none}
+    .team.team_horizontal .desc_wrapper{width:100%;float:none}
+
+    /* Timeline */
+    .timeline_items{background-position:21px top}
+    .timeline_items > li{padding:0 0 25px 80px !important;background-position:-20px top!important}
+    .timeline_items > li h3 span{display:table;position:relative;margin-bottom:20px;clear:both}
+    .timeline_items > li h3:before{left:24px}
+    .timeline_items:after{left:23px}
+
+    /* Testimonials slider */
+    .testimonials_slider a.slider_prev{display:none!important}
+    .testimonials_slider a.slider_next{display:none!important}
+    .testimonials_slider .testimonials_slider_ul li{padding:0}
+
+    /* Respond */
+    #respond .comment-form-author{width:99%;margin-right:0;float:none}
+    #respond .comment-form-email{width:99%;margin-right:0;float:none}
+    #respond .comment-form-url{width:99%;float:none;clear:both;}
+    #respond input[type="text"],#respond input[type="password"],#respond input[type="email"],#respond select{width:100%}
+    #respond .comment-form-comment textarea{width:100%}
+    #respond .required{right:11px}
+    #comments .commentlist > li .comment-body{margin-left:55px;padding:10px}
+    #comments .commentlist > li .photo{width:32px;height:32px;left:-55px}
+    #comments .commentlist > li .children{margin-left:0;padding-left:10px}
+    #comments .commentlist > li .reply{right:10px;top:10px}
+    #comments .commentlist > li .comment-meta a.comment-edit-link{padding-right:0;position:static;float:none}
+    .rtl #comments .commentlist > li .comment-body{margin-left:0;margin-right:55px}
+    .rtl #comments .commentlist > li .photo{left:auto;right:-55px}
+    .rtl #comments .commentlist > li .children{margin-right:0;padding-left:0;padding-right:10px}
+    .rtl #comments .commentlist > li .reply{left:10px;right:auto}
+    .rtl #comments .commentlist > li .comment-meta a.comment-edit-link{padding:0}
+
+    /* Zoom Box */
+    .zoom_box .desc .desc_img img{max-height:60px;width:auto}
+    .zoom_box .desc .desc_txt{font-size:14px;line-height:17px}
+
+    /* Feature box */
+    .feature_box .feature_box_wrapper{display:block}
+    .feature_box .feature_box_wrapper .photo_wrapper,.feature_box .feature_box_wrapper .desc_wrapper{display:block;width:100%;padding:0}
+    .feature_box .feature_box_wrapper .photo_wrapper{margin-bottom:15px;text-align:center}
+    .feature_box .feature_box_wrapper .photo_wrapper a{display:inline-block}
+
+    /* Gallery */
+    #Content .gallery .gallery-item{width:100%}
+
+    /* bbpress */
+    .bbpress #bbpress-forums p.bbp-topic-meta,.bbpress #bbpress-forums p.bbp-topic-meta{display:none}
+
+    /* Easy Digital Downloads */
+    .edd_downloads_list .edd_download{width:100%!important}
+    .edd_downloads_list .edd_download .edd_download_inner{margin:0 0 20px}
+
+    /* GDPR */
+
+    #mfn-gdpr[data-direction="vertical"]{width:calc(100% - 40px);padding:30px;bottom:20px}
+    #mfn-gdpr[data-aligment="left"]{left:20px}
+    #mfn-gdpr[data-aligment="right"]{right:20px}
+}
+
+
+/* Retina | iPad ----------------------------------------------------------------------------------------------- Retina | iPad */
+@media only screen and (max-device-width: 1024px){
+    html.ios, .ios .section.bg-cover{background-attachment:scroll!important}
+}
