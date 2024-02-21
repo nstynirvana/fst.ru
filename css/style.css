@@ -276,7 +276,7 @@ b {
 .header-container {
 	display: flex;
 	align-items: center;
-	gap: 15px;
+	gap: 10px;
 	flex-shrink: 0;
 	justify-content: space-between;
 }
@@ -289,7 +289,7 @@ b {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 32px;
+	gap: 18px;
 }
 
 .haeder-menu ul li {
@@ -338,7 +338,7 @@ b {
 .header-contacts {
 	display: flex;
 	align-items: flex-start;
-	gap: 28px;
+	gap: 10px;
 }
 
 .header-contacts.mobile {
@@ -1711,7 +1711,7 @@ b {
 }
 
 .footer .haeder-menu ul {
-	gap: 60px;
+	gap: 30px;
 }
 
 .footer .header-contacts a {

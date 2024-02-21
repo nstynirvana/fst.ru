@@ -40,7 +40,7 @@
         <div class="footer-line-2 lg-view">
             <div class="footer-line-2__block-first">
                 <div class="footer-copyright">
-                    ©2023 г.
+                    ©2024 г.
                 </div>
                 <div class="footer-politica">
                     <a href="/confidentiality/">

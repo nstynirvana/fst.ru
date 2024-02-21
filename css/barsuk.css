@@ -8,7 +8,7 @@
 
 
 .main-banner-after {
-    max-width: 338px!important;
+    max-width: 338px !important;
 }
 
 .compare-table-body-line .table-td sup {
@@ -39,7 +39,7 @@
 }
 
 .color__block {
-   padding-top: 0!important;
+    padding-top: 0 !important;
 }
 
 .fancybox-image, .fancybox-spaceball {
@@ -81,6 +81,7 @@
 body.mfn-header-scrolled div.menu.active {
     top: 75px;
 }
+
 .menu {
     position: absolute;
     left: 0;
@@ -241,13 +242,14 @@ body.mfn-header-scrolled div.menu.active {
 /*    width: 1350px!important;*/
 /*}*/
 
-.product-item-text p b sup{
+.product-item-text p b sup {
     font-size: 12px;
 }
 
 .slider-switch .slick-list {
     width: 64px;
 }
+
 .slider-constructor-switch.slick-initialized.slick-slider {
     position: inherit !important;
     padding: 20px 60px 0;
@@ -333,6 +335,46 @@ body.mfn-header-scrolled div.menu.active {
     text-align: center;
 }
 
+.breadcrumbs-list.company {
+    margin-bottom: 0;
+}
+
+.section.section-content-page.company {
+    padding-top: 36px;
+}
+
+.not-found {
+    display: flex;
+    margin: 63px auto 122px;
+    max-width: 746px;
+    gap: 52px;
+}
+
+.not-found__wrapper {
+    margin: 0 auto;
+}
+
+.not-found__wrapper-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    background-color: #F5F5F5;
+    padding: 20px 20px 20px 32px;
+    border-radius: 12px;
+}
+
+.not-found__wrapper-text p {
+    line-height: 165%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: Manrope;
+}
+
+.not-found__img.mobile-img {
+    display: none;
+}
+
 @media (max-width: 1279px) {
     .xs-view {
         display: inline-block !important;
@@ -394,7 +436,7 @@ body.mfn-header-scrolled div.menu.active {
     }
 
     .footer .haeder-menu ul {
-        gap: 22px;
+        gap: 10px;
     }
 
     .header-contacts {
@@ -418,8 +460,8 @@ body.mfn-header-scrolled div.menu.active {
     }
 
     .compare-table-header .table-td, .compare-table-body-line .table-td {
-             width: 202px;
-         }
+        width: 202px;
+    }
 
     .compare-table {
         overflow: scroll;
@@ -442,23 +484,43 @@ body.mfn-header-scrolled div.menu.active {
 }
 
 @media (max-width: 777px) {
-.main-banner-item .main-banner-picture {
+    .main-banner-item .main-banner-picture {
         padding-bottom: 100px;
-}
+    }
 
-.main-banner-after {
-    max-width: none!important;
-}
+    .main-banner-after {
+        max-width: none !important;
+    }
 
 
 }
 
 
 @media (max-width: 767px) {
-    
+
+    .not-found__img.desc-img {
+        display: none;
+    }
+
+    .not-found__img.mobile-img {
+        display: inline-block;
+    }
+
+    .not-found {
+        flex-direction: column;
+        margin: 0 auto 60px;
+        max-width: 500px;
+        gap: 32px;
+    }
+
+    .not-found__wrapper-text {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
     .main-banner-item .main-banner-picture {
         padding-bottom: 100px;
-}
+    }
 
 
     .fancybox-image, .fancybox-spaceball {
@@ -467,7 +529,7 @@ body.mfn-header-scrolled div.menu.active {
 
     .main-banner-changer .slider-switch .slick-list .slick-track {
         display: flex !important;
-        height: auto!important;
+        height: auto !important;
     }
 
     .main-banner-changer .slider-switch .slick-list .slick-track div.slick-slide.slick-active {
@@ -509,10 +571,9 @@ body.mfn-header-scrolled div.menu.active {
     /*    position: relative;*/
     /*    z-index: -1;*/
     /*}*/
-
-.gallery-block-navigation .nav ul li {
-    margin: 0 4px !important;
-}
+    .gallery-block-navigation .nav ul li {
+        margin: 0 4px !important;
+    }
 
 }
 
@@ -525,10 +586,10 @@ body.mfn-header-scrolled div.menu.active {
     .slider-constructor-img {
         max-height: 315px;
     }
-    
+
     .main-banner-after {
-    max-width: fit-content!important;
-}
+        max-width: fit-content !important;
+    }
 
 }
 
@@ -549,6 +610,10 @@ body.mfn-header-scrolled div.menu.active {
 
     .slider-constructor-img {
         max-height: 265px;
+    }
+
+    .not-found {
+        margin: 0 auto 40px;
     }
 }
 
@@ -589,3 +654,4 @@ body.mfn-header-scrolled div.menu.active {
         max-width: 210px;
     }
 }
+
