@@ -50,7 +50,8 @@ $this->setFrameMode(true);
 
                     <? endforeach; ?>
                 </div>
-
+                <img class="main-banner-picture_garanty" src="/img/garanty.png" alt="">
+                <img class="main-banner-picture_garanty-mobile" src="/img/garanty-mobile.png" alt="">
             </div>
 
 
