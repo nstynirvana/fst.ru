@@ -10,12 +10,12 @@ if($_REQUEST["user-name"] != "" && $_REQUEST["user-phone"] != ""):
     "PHONE" => $phone,
   );
 
-  if(CEvent::Send("APPLICATION_DELIVERY_FORM", 's1', $arEventFields, "Y", 17)){
+  if(CEvent::Send("APPLICATION_DELIVERY_FORM", 's1', $arEventFields, "Y", 17)) {
     CEvent::CheckEvents();
 
     echo "success";
 
-  }else{
+  } else {
     ?>
     error
     <?

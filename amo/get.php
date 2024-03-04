@@ -2,7 +2,8 @@
 global $subdomain;
 require_once $_SERVER["DOCUMENT_ROOT"] . '/amo/config.php';
 
-function printLink($method, $title, $subdomain) {
+function printLink($method, $title, $subdomain)
+{
     echo '<br>';
     echo "<a href='https://$subdomain.amocrm.ru/$method' target='_blank'>$title</a>";
     echo '<br>';

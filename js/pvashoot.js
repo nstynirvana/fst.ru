@@ -58,37 +58,6 @@ $(document).ready(function () {
         var form = $(this).serialize();
         var formType = $(this).data("formtype");
         var pageUrl = '/amo/amo.php'
-        
-        // if (formType === "form-type-circle") {
-        //     // var pageUrl = '/ajax/application-form.php'
-        //     var pageUrl = '/amo/amo.php'
-        // }
-
-        // if (formType === "form-type-application") {
-        //     // var pageUrl = '/ajax/application-form-classic.php'
-        //     var pageUrl = '/amo/amo.php'
-        // }
-
-        // if (formType === "form-type-question") {
-        //     // var pageUrl = '/ajax/question-form.php'
-        //     var pageUrl = '/amo/amo.php'
-        // }
-
-        // if (formType === "form-type-price") {
-        //     // var pageUrl = '/ajax/contact-form.php'
-        //     var pageUrl = '/amo/amo.php'
-        // }
-
-        // if (formType === "form-type-newsletter") {
-        //     // var pageUrl = '/ajax/newsletter-form.php'
-        //     var pageUrl = '/amo/amo.php'
-        // }
-
-        // if (formType === "form-delivery") {
-        //     // var pageUrl = '/ajax/application-delivery-form.php'
-        //     var pageUrl = '/amo/amo.php'
-        // }
-
 
         $.ajax({
 

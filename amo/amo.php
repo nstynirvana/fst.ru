@@ -25,16 +25,8 @@ if (isset($_POST['name-form-circle'])) {
                     [
                         "first_name" => $name,
                         "custom_fields_values" => [
-                        //   [
-                        //         "field_id" => 12358,
-                        //         "values" => [
-                        //             [
-                        //                 "value" => $name
-                        //             ]
-                        //         ]
-                        //     ],
                             [
-                                "field_id" => 366003,
+                                "field_code" => 'PHONE',
                                 "values" => [
                                     [
                                         "value" => $phone
@@ -44,59 +36,63 @@ if (isset($_POST['name-form-circle'])) {
                         ]
                     ]
                 ],
+                "tags" => [
+                    [
+                        "id" => 336257,
+                    ]
+                ],
             ],
-            "status_id" => 42349444,
+
             "pipeline_id" => $pipeline_id,
-            "request_id" => "uns_qweasd"
+            "status_id" => 42349447,
+            "request_id" => "uns_qweasd",
         ]
-    ];   
+    ];
 
     echo "success";
 
-    }
-    if (isset($_POST['form-type-application'])) {
+}
+if (isset($_POST['form-type-application'])) {
     $name = $_REQUEST['applicationUserName']; // Тело письма
     $phone = $_REQUEST['applicationUserPhone'];
     $data = [
-    [
-    "name" => "Заявка",
-    "_embedded" => [
-    "metadata" => [
-    "category" => "forms",
-    "form_id" => 'applicationFormSend',
-    "form_name" => "form-type-application",
-    "form_page" => $domain,
-    "form_sent_at" => strtotime(date("Y-m-d H:i:s")),
-    ],
-    "contacts" => [
-    [
-    "first_name" => $name,
-    "custom_fields_values" => [
-    //                            [
-    //                                "field_id" => 12358,
-    //                                "values" => [
-    //                                    [
-    //                                        "value" => $name
-    //                                    ]
-    //                                ]
-    //                            ],
-    [
-    "field_id" => 366003,
-    "values" => [
-    [
-    "value" => $phone
-    ]
-    ]
-    ],
-    ]
-    ]
-    ],
-    ],
-    "status_id" => 42349444,
-    "pipeline_id" => $pipeline_id,
-    "request_id" => "uns_qweasd"
-    ]
-    ];    
+        [
+            "name" => "Заявка",
+            "_embedded" => [
+                "metadata" => [
+                    "category" => "forms",
+                    "form_id" => 'applicationFormSend',
+                    "form_name" => "form-type-application",
+                    "form_page" => $domain,
+                    "form_sent_at" => strtotime(date("Y-m-d H:i:s")),
+                ],
+                "contacts" => [
+                    [
+                        "first_name" => $name,
+                        "custom_fields_values" => [
+                            [
+                                "field_code" => 'PHONE',
+                                "values" => [
+                                    [
+                                        "value" => $phone
+                                    ]
+                                ]
+                            ],
+                        ]
+                    ]
+                ],
+                "tags" => [
+                    [
+                        "id" => 336257,
+                    ]
+                ],
+            ],
+
+            "pipeline_id" => $pipeline_id,
+            "status_id" => 42349447,
+            "request_id" => "uns_qweasd"
+        ]
+    ];
     echo "success";
 }
 
@@ -122,16 +118,8 @@ if (isset($_POST['form-type-question'])) {
                     [
                         "first_name" => $name,
                         "custom_fields_values" => [
-//                            [
-//                                "field_id" => 12358,
-//                                "values" => [
-//                                    [
-//                                        "value" => $name
-//                                    ]
-//                                ]
-//                            ],
                             [
-                                "field_id" => 366003,
+                                "field_code" => 'PHONE',
                                 "values" => [
                                     [
                                         "value" => $phone
@@ -139,7 +127,7 @@ if (isset($_POST['form-type-question'])) {
                                 ]
                             ],
                             [
-                                "field_id" => 366001,
+                                "field_id" => 366277,
                                 "values" => [
                                     [
                                         "value" => $message
@@ -149,12 +137,17 @@ if (isset($_POST['form-type-question'])) {
                         ]
                     ]
                 ],
+                "tags" => [
+                    [
+                        "id" => 336257,
+                    ]
+                ],
             ],
-            "status_id" => 42349444,
             "pipeline_id" => $pipeline_id,
+            "status_id" => 42349447,
             "request_id" => "uns_qweasd"
         ]
-    ];   
+    ];
     echo "success";
 
 }
@@ -179,16 +172,8 @@ if (isset($_POST['form-type-price'])) {
                         "first_name" => $name,
                         "phone" => $phone,
                         "custom_fields_values" => [
-//                            [
-//                                "field_id" => 12358,
-//                                "values" => [
-//                                    [
-//                                        "value" => $name
-//                                    ]
-//                                ]
-//                            ],
                             [
-                                "field_id" => 366003,
+                                "field_code" => 'PHONE',
                                 "values" => [
                                     [
                                         "value" => $phone
@@ -214,9 +199,14 @@ if (isset($_POST['form-type-price'])) {
                         ]
                     ]
                 ],
+                "tags" => [
+                    [
+                        "id" => 336257,
+                    ]
+                ],
             ],
-            "status_id" => 42349444,
             "pipeline_id" => $pipeline_id,
+            "status_id" => 42349447,
             "request_id" => "uns_qweasd"
         ]
     ];
@@ -245,15 +235,8 @@ if (isset($_POST['form-type-newsletter'])) {
                         "first_name" => $name,
                         "phone" => $phone,
                         "custom_fields_values" => [
-//                                "field_id" => 12358,
-//                                "values" => [
-//                                    [
-//                                        "value" => $name
-//                                    ]
-//                                ]
-//                            ],
                             [
-                                "field_id" => 366003,
+                                "field_code" => 'PHONE',
                                 "values" => [
                                     [
                                         "value" => $phone
@@ -263,13 +246,18 @@ if (isset($_POST['form-type-newsletter'])) {
                         ]
                     ]
                 ],
+                "tags" => [
+                    [
+                        "id" => 336257,
+                    ]
+                ],
             ],
-            "status_id" => 42349444,
             "pipeline_id" => $pipeline_id,
+            "status_id" => 42349447,
             "request_id" => "uns_qweasd"
         ]
     ];
-    
+
     echo "success";
 
 }
@@ -291,16 +279,8 @@ if (isset($_POST['form-delivery'])) {
                     [
                         "first_name" => $name,
                         "custom_fields_values" => [
-//                            [
-//                                "field_id" => 12358,
-//                                "values" => [
-//                                    [
-//                                        "value" => $name
-//                                    ]
-//                                ]
-//                            ],
                             [
-                                "field_id" => 366003,
+                                "field_code" => 'PHONE',
                                 "values" => [
                                     [
                                         "value" => $phone
@@ -310,12 +290,18 @@ if (isset($_POST['form-delivery'])) {
                         ]
                     ]
                 ],
+                "tags" => [
+                    [
+                        "id" => 336257,
+                    ]
+                ],
             ],
-            "status_id" => 42349444,
             "pipeline_id" => $pipeline_id,
+            "status_id" => 42349447,
             "request_id" => "uns_qweasd"
         ]
-    ];    echo "success";
+    ];
+    echo "success";
 
 }
 

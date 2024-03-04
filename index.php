@@ -918,7 +918,7 @@ $APPLICATION->SetTitle("Гибкий кирпич FST | Гибкая клинк�
                                 </div>
                                 <div class="form-item-line">
                                     <div class="form-item-one width-100">
-                                        <label>Сообщение</label>
+                                        <label for="message">Сообщение</label>
                                         <textarea name="message" id="message" required></textarea>
                                     </div>
                                 </div>
