@@ -6,9 +6,137 @@
 /*    padding: 18px 17px 17px;*/
 /*}*/
 
+.mobile-view {
+    display: none;
+}
+
+.footer {
+    background-color: #232B35;
+}
+
+.footer .wrapper-inside {
+    display: flex;
+}
+
+.footer-column-3 .header-contacts {
+    flex-direction: column;
+    gap: normal;
+}
+
+.footer-column-2 {
+    margin: 0 66px 0 64px;
+}
+
+.footer-column-2 .haeder-menu ul li a {
+    color: #FFFFFF;
+}
+
+.footer-column-2 .haeder-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.footer-column-2 .haeder-menu ul li a:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: #FFFFFF;
+    bottom: -3px;
+    left: 0px;
+    -webkit-transition: .6s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: .6s cubic-bezier(.645, .045, .355, 1);
+    transition: .6s cubic-bezier(.645, .045, .355, 1);
+}
+
+.footer-column-2 .haeder-menu ul li a.active:before {
+    background: #BE6853;
+}
+
+.footer-column-2 .haeder-menu ul li a:hover:before,
+.footer-column-2 .haeder-menu ul li a.active:before {
+    width: 100%;
+}
+
+.footer-copyright {
+    color: #94989D;
+    margin-top: 25px;
+    margin-left: 43px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-column-2 .footer-politica {
+    margin-top: 41px;
+    font-weight: 400;
+}
+
+.footer-column-3 .header-contacts .header-email {
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.footer-column-3 .header-contacts .header-phone a{
+   color: #FFFFFF;
+}
+
+.footer-column .header-contacts .header-phone a{
+    color: #FFFFFF;
+}
+
+
+.footer-column-3 .header-contacts .header-phone a:hover {
+    text-decoration: none;
+}
+
+.footer-column-3 .header-contacts .header-phone a:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: #FFFFFF;
+    bottom: -3px;
+    left: 0px;
+    -webkit-transition: .6s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: .6s cubic-bezier(.645, .045, .355, 1);
+    transition: .6s cubic-bezier(.645, .045, .355, 1);
+}
+
+.footer-column-3 .header-contacts .header-phone a:hover:before {
+    width: 100%;
+}
+
+
+.footer-column-3 .header-contacts .header-phone a:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: #FFFFFF;
+    bottom: -3px;
+    left: 0px;
+    -webkit-transition: .6s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: .6s cubic-bezier(.645, .045, .355, 1);
+    transition: .6s cubic-bezier(.645, .045, .355, 1);
+}
+
+.footer-column-3 .header-contacts .header-phone  a:hover:after {
+    width: 100%;
+}
+
+.header-network a:first-child {
+    margin-right: 15px;
+}
+
 .main-banner-item {
     position: relative;
 }
+
 .main-banner-picture_garanty {
     position: absolute;
     top: 77px;
@@ -16,8 +144,9 @@
 }
 
 .main-banner-picture_garanty-mobile {
-  display: none;
+    display: none;
 }
+
 .main-banner-after {
     max-width: 338px !important;
 }
@@ -422,6 +551,7 @@ body.mfn-header-scrolled div.menu.active {
     .main-banner-picture_garanty {
         display: none;
     }
+
     .main-banner-picture_garanty-mobile {
         display: inline;
         position: absolute;
@@ -432,6 +562,10 @@ body.mfn-header-scrolled div.menu.active {
 }
 
 @media (max-width: 1092px) {
+
+    .footer-column-2 {
+        margin: 0 40px;
+    }
 
     .form-item-one .pseudo-check label .checkbox-text {
         padding-top: 0;
@@ -460,7 +594,7 @@ body.mfn-header-scrolled div.menu.active {
         gap: 10px;
     }
 
-    .header-contacts {
+    .footer-column .header-contacts {
         gap: 13px;
     }
 
@@ -472,10 +606,13 @@ body.mfn-header-scrolled div.menu.active {
         max-height: 500px;
     }
 
-
 }
 
 @media (max-width: 945px) {
+
+    .footer-copyright {
+        margin-top: 41px;
+    }
     .compare-table-container {
         width: 1010px;
     }
@@ -490,6 +627,11 @@ body.mfn-header-scrolled div.menu.active {
 }
 
 @media (max-width: 925px) {
+
+    .footer {
+        height: 420px;
+        padding: 40px 0 35px;
+    }
     .form-item-one .pseudo-check label .checkbox-text {
         padding-top: 0;
         width: 290px;
@@ -501,6 +643,50 @@ body.mfn-header-scrolled div.menu.active {
 
     .slider-constructor-img {
         max-height: 395px;
+    }
+
+    .desc-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: inline;
+    }
+
+    .footer-column .header-contacts {
+        flex-direction: column;
+        margin-top: 36px;
+    }
+
+    .footer-column .haeder-menu{
+        margin-top: 32px;
+    }
+
+    .footer-column .haeder-menu ul li a {
+        color: #FFFFFF;
+    }
+
+    .footer-copyright {
+        color: #94989D;
+        margin-top: 32px;
+        margin-left: 0;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-column .footer-politica {
+        margin-top: 36px;
+    }
+
+    .footer-column .header-contacts .header-email {
+        margin: 16px 0;
+    }
+
+    .header-network a:first-child {
+        margin-right: 15px;
     }
 }
 
@@ -518,6 +704,75 @@ body.mfn-header-scrolled div.menu.active {
 
 
 @media (max-width: 767px) {
+
+
+    .footer-column .header-contacts .header-phone a:hover {
+        text-decoration: none;
+    }
+
+    .footer-column .header-contacts .header-phone a:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 0px;
+        height: 2px;
+        background: #FFFFFF;
+        bottom: -3px;
+        left: 0px;
+        -webkit-transition: .6s cubic-bezier(.645, .045, .355, 1);
+        -o-transition: .6s cubic-bezier(.645, .045, .355, 1);
+        transition: .6s cubic-bezier(.645, .045, .355, 1);
+    }
+
+    .footer-column .header-contacts .header-phone a:hover:before {
+        width: 100%;
+    }
+
+
+    .footer-column .header-contacts .header-phone a:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 0px;
+        height: 2px;
+        background: #FFFFFF;
+        bottom: -3px;
+        left: 0px;
+        -webkit-transition: .6s cubic-bezier(.645, .045, .355, 1);
+        -o-transition: .6s cubic-bezier(.645, .045, .355, 1);
+        transition: .6s cubic-bezier(.645, .045, .355, 1);
+    }
+
+    .footer-column .header-contacts .header-phone  a:hover:after {
+        width: 100%;
+    }
+
+    .footer-column .footer-politica {
+        margin-top: 6px;
+        text-align: center;
+    }
+
+    .footer-column .header-contacts {
+        gap: normal;
+        align-items: center;
+
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer {
+        height: 725px;
+    }
+
+    .footer .wrapper-inside {
+        justify-content: center;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
 
     .main-banner-picture_garanty-mobile {
         top: 173px;

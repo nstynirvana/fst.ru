@@ -1,2 +1,3 @@
-User-Agent: *
-Host: https://fst-klinker.ru
+User-agent: *
+
+Disallow: /

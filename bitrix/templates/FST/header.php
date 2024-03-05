@@ -158,4 +158,4 @@
     </div>
 
 </header>
-    <main <?/*if($dir === "/colors/"):?>style="position: absolute;z-index: -1;"<?endif;*/?> class="content">
+    <main <?php if($dir === "/contacts/"):?>style="padding: 0 0 160px;"<?php elseif($dir === "/constructor/"):?>style="padding: 0 0 13px;"<?php endif;?> class="content">
