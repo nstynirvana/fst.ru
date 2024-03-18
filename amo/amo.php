@@ -6,6 +6,12 @@ $domain = 'fst-klinker.ru';
 $pipeline_id = 4604887;
 $user_amo = 1450897;
 
+$utm_source   = $_COOKIE["utm_source"];
+$utm_content  = $_COOKIE["utm_content"];
+$utm_medium   = $_COOKIE["utm_medium"];
+$utm_campaign = $_COOKIE["utm_campaign"];
+$utm_term     = $_COOKIE["utm_term"];
+
 if (isset($_POST['name-form-circle'])) {
     $name = $_REQUEST['user-name'];
     $phone = $_REQUEST['user-phone'];
@@ -42,7 +48,48 @@ if (isset($_POST['name-form-circle'])) {
                     ]
                 ],
             ],
-
+            "custom_fields_values" => [
+                [
+                    "field_code" => 'UTM_SOURCE',
+                    "values" => [
+                        [
+                            "value" => $utm_source
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CONTENT',
+                    "values" => [
+                        [
+                            "value" => $utm_content
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_MEDIUM',
+                    "values" => [
+                        [
+                            "value" => $utm_medium
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CAMPAIGN',
+                    "values" => [
+                        [
+                            "value" => $utm_campaign
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_TERM',
+                    "values" => [
+                        [
+                            "value" => $utm_term
+                        ]
+                    ]
+                ],
+            ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
             "request_id" => "uns_qweasd",
@@ -87,7 +134,48 @@ if (isset($_POST['form-type-application'])) {
                     ]
                 ],
             ],
-
+            "custom_fields_values" => [
+                [
+                    "field_code" => 'UTM_SOURCE',
+                    "values" => [
+                        [
+                            "value" => $utm_source
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CONTENT',
+                    "values" => [
+                        [
+                            "value" => $utm_content
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_MEDIUM',
+                    "values" => [
+                        [
+                            "value" => $utm_medium
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CAMPAIGN',
+                    "values" => [
+                        [
+                            "value" => $utm_campaign
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_TERM',
+                    "values" => [
+                        [
+                            "value" => $utm_term
+                        ]
+                    ]
+                ],
+            ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
             "request_id" => "uns_qweasd"
@@ -140,6 +228,48 @@ if (isset($_POST['form-type-question'])) {
                 "tags" => [
                     [
                         "id" => 336257,
+                    ]
+                ],
+            ],
+            "custom_fields_values" => [
+                [
+                    "field_code" => 'UTM_SOURCE',
+                    "values" => [
+                        [
+                            "value" => $utm_source
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CONTENT',
+                    "values" => [
+                        [
+                            "value" => $utm_content
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_MEDIUM',
+                    "values" => [
+                        [
+                            "value" => $utm_medium
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CAMPAIGN',
+                    "values" => [
+                        [
+                            "value" => $utm_campaign
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_TERM',
+                    "values" => [
+                        [
+                            "value" => $utm_term
+                        ]
                     ]
                 ],
             ],
@@ -205,6 +335,48 @@ if (isset($_POST['form-type-price'])) {
                     ]
                 ],
             ],
+            "custom_fields_values" => [
+                [
+                    "field_code" => 'UTM_SOURCE',
+                    "values" => [
+                        [
+                            "value" => $utm_source
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CONTENT',
+                    "values" => [
+                        [
+                            "value" => $utm_content
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_MEDIUM',
+                    "values" => [
+                        [
+                            "value" => $utm_medium
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CAMPAIGN',
+                    "values" => [
+                        [
+                            "value" => $utm_campaign
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_TERM',
+                    "values" => [
+                        [
+                            "value" => $utm_term
+                        ]
+                    ]
+                ],
+            ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
             "request_id" => "uns_qweasd"
@@ -252,6 +424,48 @@ if (isset($_POST['form-type-newsletter'])) {
                     ]
                 ],
             ],
+            "custom_fields_values" => [
+                [
+                    "field_code" => 'UTM_SOURCE',
+                    "values" => [
+                        [
+                            "value" => $utm_source
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CONTENT',
+                    "values" => [
+                        [
+                            "value" => $utm_content
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_MEDIUM',
+                    "values" => [
+                        [
+                            "value" => $utm_medium
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CAMPAIGN',
+                    "values" => [
+                        [
+                            "value" => $utm_campaign
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_TERM',
+                    "values" => [
+                        [
+                            "value" => $utm_term
+                        ]
+                    ]
+                ],
+            ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
             "request_id" => "uns_qweasd"
@@ -293,6 +507,48 @@ if (isset($_POST['form-delivery'])) {
                 "tags" => [
                     [
                         "id" => 336257,
+                    ]
+                ],
+            ],
+            "custom_fields_values" => [
+                [
+                    "field_code" => 'UTM_SOURCE',
+                    "values" => [
+                        [
+                            "value" => $utm_source
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CONTENT',
+                    "values" => [
+                        [
+                            "value" => $utm_content
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_MEDIUM',
+                    "values" => [
+                        [
+                            "value" => $utm_medium
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_CAMPAIGN',
+                    "values" => [
+                        [
+                            "value" => $utm_campaign
+                        ]
+                    ]
+                ],
+                [
+                    "field_code" => 'UTM_TERM',
+                    "values" => [
+                        [
+                            "value" => $utm_term
+                        ]
                     ]
                 ],
             ],

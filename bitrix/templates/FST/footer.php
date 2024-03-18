@@ -2,7 +2,7 @@
 
 </div><!-- .wrapper -->
 
-<footer class="footer">
+<footer class="footer" <? if ($dir === "/constructor/"): ?>style="margin: 0 auto;"<?endif?>>
 
     <div class="wrapper-inside">
 

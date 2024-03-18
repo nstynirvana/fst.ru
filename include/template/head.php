@@ -12,6 +12,24 @@ $dir = $APPLICATION->GetCurDir();
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 
+<?
+$url = $_SERVER['REQUEST_URI'];
+$parsed_url = parse_url($url);
+
+if(!isset($parsed_url['query'])) {
+    if($dir === "/confidentiality/") :
+        ?>
+        <meta name="robots" content="noindex, follow">
+    <?
+    else :
+        ?>
+        <link rel="canonical" href="https://fst-klinker.ru<?= $dir ?>" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <?
+    endif;
+}
+?>
+
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
@@ -26,7 +44,6 @@ $dir = $APPLICATION->GetCurDir();
 <link href="/css/selectric.css" rel="stylesheet">
 <link href="/css/slick.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
-
 <link href="/css/barsuk.css" rel="stylesheet">
 
 
