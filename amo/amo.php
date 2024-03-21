@@ -11,6 +11,7 @@ $utm_content  = $_COOKIE["utm_content"];
 $utm_medium   = $_COOKIE["utm_medium"];
 $utm_campaign = $_COOKIE["utm_campaign"];
 $utm_term     = $_COOKIE["utm_term"];
+$yclid     = $_COOKIE["yclid"];
 
 if (isset($_POST['name-form-circle'])) {
     $name = $_REQUEST['user-name'];
@@ -86,6 +87,14 @@ if (isset($_POST['name-form-circle'])) {
                     "values" => [
                         [
                             "value" => $utm_term
+                        ]
+                    ]
+                ],
+                [
+                    "field_id" => 343599,
+                    "values" => [
+                        [
+                            "value" => $yclid
                         ]
                     ]
                 ],
@@ -172,6 +181,14 @@ if (isset($_POST['form-type-application'])) {
                     "values" => [
                         [
                             "value" => $utm_term
+                        ]
+                    ]
+                ],
+                [
+                    "field_id" => 343599,
+                    "values" => [
+                        [
+                            "value" => $yclid
                         ]
                     ]
                 ],
@@ -269,6 +286,14 @@ if (isset($_POST['form-type-question'])) {
                     "values" => [
                         [
                             "value" => $utm_term
+                        ]
+                    ]
+                ],
+                [
+                    "field_id" => 343599,
+                    "values" => [
+                        [
+                            "value" => $yclid
                         ]
                     ]
                 ],
@@ -376,6 +401,14 @@ if (isset($_POST['form-type-price'])) {
                         ]
                     ]
                 ],
+                [
+                    "field_id" => 343599,
+                    "values" => [
+                        [
+                            "value" => $yclid
+                        ]
+                    ]
+                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -465,6 +498,14 @@ if (isset($_POST['form-type-newsletter'])) {
                         ]
                     ]
                 ],
+                [
+                    "field_id" => 343599,
+                    "values" => [
+                        [
+                            "value" => $yclid
+                        ]
+                    ]
+                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -548,6 +589,14 @@ if (isset($_POST['form-delivery'])) {
                     "values" => [
                         [
                             "value" => $utm_term
+                        ]
+                    ]
+                ],
+                [
+                    "field_id" => 343599,
+                    "values" => [
+                        [
+                            "value" => $yclid
                         ]
                     ]
                 ],
