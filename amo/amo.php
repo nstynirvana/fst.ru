@@ -336,14 +336,6 @@ if (isset($_POST['form-type-price'])) {
                                 ]
                             ],
                             [
-                                "field_id" => 360329,
-                                "values" => [
-                                    [
-                                        "value" => $width
-                                    ]
-                                ]
-                            ],
-                            [
                                 "field_id" => 360357,
                                 "values" => [
                                     [
@@ -361,6 +353,14 @@ if (isset($_POST['form-type-price'])) {
                 ],
             ],
             "custom_fields_values" => [
+                [
+                    "field_id" => 360329,
+                    "values" => [
+                        [
+                            "value" => $width
+                        ]
+                    ]
+                ],
                 [
                     "field_code" => 'UTM_SOURCE',
                     "values" => [
