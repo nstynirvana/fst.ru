@@ -6,6 +6,92 @@
 /*    padding: 18px 17px 17px;*/
 /*}*/
 
+.dilers {
+}
+
+.dilers__title {
+    text-align: center;
+    color: #232B35;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.dilers__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -32px; /* компенсация отступов */
+}
+
+.diler {
+    flex-basis: calc(33.33% - 32px); /* ограничиваем ширину третью частью */
+    margin-right: 32px;
+    margin-bottom: 70px;
+}
+
+.diler:nth-child(3n) {
+    margin-right: 0; /* убираем margin-right у каждого третьего элемента */
+}
+
+.diler__town {
+    cursor: default;
+    color: #232B35;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.diler__title {
+    cursor: default;
+    color: #232B35;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    margin-bottom: 8px;
+}
+
+.diler__icon {
+    margin-right: 6px;
+}
+
+.diler__info {
+    display: flex;
+    align-items: baseline;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%;
+    color: #BE6853;
+    text-decoration: none;
+    cursor: default;
+    margin-bottom: 4px;
+}
+
+.diler__info.adress {
+    color: #232B35;
+}
+
+.diler__info:last-child {
+    margin-bottom: 0;
+}
+
+.diler_info:hover {
+    text-decoration: underline;
+}
+
 .mobile-view {
     display: none;
 }
@@ -79,11 +165,11 @@
     margin-bottom: 14px;
 }
 
-.footer-column-3 .header-contacts .header-phone a{
-   color: #FFFFFF;
+.footer-column-3 .header-contacts .header-phone a {
+    color: #FFFFFF;
 }
 
-.footer-column .header-contacts .header-phone a{
+.footer-column .header-contacts .header-phone a {
     color: #FFFFFF;
 }
 
@@ -125,7 +211,7 @@
     transition: .6s cubic-bezier(.645, .045, .355, 1);
 }
 
-.footer-column-3 .header-contacts .header-phone  a:hover:after {
+.footer-column-3 .header-contacts .header-phone a:hover:after {
     width: 100%;
 }
 
@@ -610,9 +696,29 @@ body.mfn-header-scrolled div.menu.active {
 
 @media (max-width: 945px) {
 
+    .dilers__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -24px; /* компенсация отступов */
+    }
+    .diler {
+        flex-basis: calc(50% - 16px); /* устанавливаем ширину на 50% с учетом отступов */
+        margin-right: 16px; /* добавляем отступ между элементами */
+        margin-bottom: 24px; /* скорректируйте отступ вниз, если требуется */
+    }
+
+    .diler:nth-child(2n) {
+        margin-right: 0; /* убираем margin-right у каждого второго элемента */
+    }
+
+    .diler:nth-child(3n) {
+        margin-right: 16px;
+    }
+
     .footer-copyright {
         margin-top: 41px;
     }
+
     .compare-table-container {
         width: 1010px;
     }
@@ -632,6 +738,7 @@ body.mfn-header-scrolled div.menu.active {
         height: 420px;
         padding: 40px 0 35px;
     }
+
     .form-item-one .pseudo-check label .checkbox-text {
         padding-top: 0;
         width: 290px;
@@ -658,7 +765,7 @@ body.mfn-header-scrolled div.menu.active {
         margin-top: 36px;
     }
 
-    .footer-column .haeder-menu{
+    .footer-column .haeder-menu {
         margin-top: 32px;
     }
 
@@ -743,7 +850,7 @@ body.mfn-header-scrolled div.menu.active {
         transition: .6s cubic-bezier(.645, .045, .355, 1);
     }
 
-    .footer-column .header-contacts .header-phone  a:hover:after {
+    .footer-column .header-contacts .header-phone a:hover:after {
         width: 100%;
     }
 
@@ -900,6 +1007,47 @@ body.mfn-header-scrolled div.menu.active {
 }
 
 @media (max-width: 447px) {
+
+    .section-contact-map {
+        padding-bottom: 28px !important;
+    }
+
+    .dilers__title {
+        font-size: 22px;
+        line-height: 140%;
+        margin-bottom: 28px;
+    }
+
+    .dilers__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+
+    .diler {
+        padding-top: 23px;
+        flex-basis: 100%; /* изменяем ширину на 100% */
+        margin-right: 0;
+        padding-bottom: 23px;
+        border-bottom: 2px solid #D9D9D9; /* Параметры линии под текстом */
+        margin-bottom: 0;
+    }
+
+    .diler:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .diler:last-child {
+        border-bottom: none;
+    }
+
+    .diler__town {
+        line-height: 160%;
+    }
+
+    .diler__info {
+    }
 
     .main-banner-content .main-banner-changer {
         top: 286px;

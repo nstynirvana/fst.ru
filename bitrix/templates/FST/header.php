@@ -168,5 +168,4 @@ if (isset($_GET["yclid"])) setcookie('yclid', $_GET["yclid"], time() + 3600 * 24
         </div>
 
     </header>
-    <main <?php if ($dir === "/contacts/"): ?>style="padding: 0 0 160px;"
-          <?php elseif ($dir === "/constructor/"): ?>style="padding: 0 0 13px;"<?php endif; ?> class="content">
+    <main  <?if ($dir === "/constructor/"): ?>style="padding: 0 0 13px;"<? endif; ?> class="content">

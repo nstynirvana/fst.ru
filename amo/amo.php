@@ -10,13 +10,13 @@ $utm_source   = $_COOKIE["utm_source"];
 $utm_content  = $_COOKIE["utm_content"];
 $utm_medium   = $_COOKIE["utm_medium"];
 $utm_campaign = $_COOKIE["utm_campaign"];
-$utm_term     = $_COOKIE["utm_term"];
-$yclid     = $_COOKIE["yclid"];
+$utm_term = $_COOKIE["utm_term"];
 
 if (isset($_POST['name-form-circle'])) {
     $name = $_REQUEST['user-name'];
     $phone = $_REQUEST['user-phone'];
     $title = $_REQUEST['name-form-circle'];
+    $ym_uid = $_REQUEST['yandex-metrika-id'];
     $data = [
         [
             "name" => "Заявка $title",
@@ -51,6 +51,14 @@ if (isset($_POST['name-form-circle'])) {
             ],
             "custom_fields_values" => [
                 [
+                    "field_id" => 366333,
+                    "values" => [
+                        [
+                            "value" => $ym_uid
+                        ]
+                    ]
+                ],
+                [
                     "field_code" => 'UTM_SOURCE',
                     "values" => [
                         [
@@ -90,14 +98,6 @@ if (isset($_POST['name-form-circle'])) {
                         ]
                     ]
                 ],
-                [
-                    "field_id" => 343599,
-                    "values" => [
-                        [
-                            "value" => $yclid
-                        ]
-                    ]
-                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -111,6 +111,7 @@ if (isset($_POST['name-form-circle'])) {
 if (isset($_POST['form-type-application'])) {
     $name = $_REQUEST['applicationUserName']; // Тело письма
     $phone = $_REQUEST['applicationUserPhone'];
+    $ym_uid = $_REQUEST['yandex-metrika-id'];
     $data = [
         [
             "name" => "Заявка",
@@ -145,6 +146,14 @@ if (isset($_POST['form-type-application'])) {
             ],
             "custom_fields_values" => [
                 [
+                    "field_id" => 366333,
+                    "values" => [
+                        [
+                            "value" => $ym_uid
+                        ]
+                    ]
+                ],
+                [
                     "field_code" => 'UTM_SOURCE',
                     "values" => [
                         [
@@ -184,14 +193,6 @@ if (isset($_POST['form-type-application'])) {
                         ]
                     ]
                 ],
-                [
-                    "field_id" => 343599,
-                    "values" => [
-                        [
-                            "value" => $yclid
-                        ]
-                    ]
-                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -200,12 +201,11 @@ if (isset($_POST['form-type-application'])) {
     ];
     echo "success";
 }
-
-
 if (isset($_POST['form-type-question'])) {
     $name = $_REQUEST['name-lastname'];
     $phone = $_REQUEST['phone'];
     $message = $_REQUEST['message'];
+    $ym_uid = $_REQUEST['yandex-metrika-id'];
 
     $data = [
         [
@@ -250,6 +250,14 @@ if (isset($_POST['form-type-question'])) {
             ],
             "custom_fields_values" => [
                 [
+                    "field_id" => 366333,
+                    "values" => [
+                        [
+                            "value" => $ym_uid
+                        ]
+                    ]
+                ],
+                [
                     "field_code" => 'UTM_SOURCE',
                     "values" => [
                         [
@@ -289,14 +297,6 @@ if (isset($_POST['form-type-question'])) {
                         ]
                     ]
                 ],
-                [
-                    "field_id" => 343599,
-                    "values" => [
-                        [
-                            "value" => $yclid
-                        ]
-                    ]
-                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -311,6 +311,8 @@ if (isset($_POST['form-type-price'])) {
     $phone = $_REQUEST['phone-number'];
     $width = $_REQUEST['width'];
     $town = $_REQUEST['town'];
+    $ym_uid = $_REQUEST['yandex-metrika-id'];
+
     $data = [
         [
             "name" => "Заявка по расчету точной стоимости объекта",
@@ -353,6 +355,14 @@ if (isset($_POST['form-type-price'])) {
                 ],
             ],
             "custom_fields_values" => [
+                [
+                    "field_id" => 366333,
+                    "values" => [
+                        [
+                            "value" => $ym_uid
+                        ]
+                    ]
+                ],
                 [
                     "field_id" => 360329,
                     "values" => [
@@ -401,14 +411,6 @@ if (isset($_POST['form-type-price'])) {
                         ]
                     ]
                 ],
-                [
-                    "field_id" => 343599,
-                    "values" => [
-                        [
-                            "value" => $yclid
-                        ]
-                    ]
-                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -418,11 +420,11 @@ if (isset($_POST['form-type-price'])) {
     echo "success";
 
 }
-
 if (isset($_POST['form-type-newsletter'])) {
 
     $name = $_REQUEST['user-name']; // Тело письма
     $phone = $_REQUEST['user-phone'];
+    $ym_uid = $_REQUEST['yandex-metrika-id'];
 
     $data = [
         [
@@ -459,6 +461,14 @@ if (isset($_POST['form-type-newsletter'])) {
             ],
             "custom_fields_values" => [
                 [
+                    "field_id" => 366333,
+                    "values" => [
+                        [
+                            "value" => $ym_uid
+                        ]
+                    ]
+                ],
+                [
                     "field_code" => 'UTM_SOURCE',
                     "values" => [
                         [
@@ -498,14 +508,6 @@ if (isset($_POST['form-type-newsletter'])) {
                         ]
                     ]
                 ],
-                [
-                    "field_id" => 343599,
-                    "values" => [
-                        [
-                            "value" => $yclid
-                        ]
-                    ]
-                ],
             ],
             "pipeline_id" => $pipeline_id,
             "status_id" => 42349447,
@@ -519,6 +521,7 @@ if (isset($_POST['form-type-newsletter'])) {
 if (isset($_POST['form-delivery'])) {
     $name = $_REQUEST['user-name']; // Тело письма
     $phone = $_REQUEST['user-phone'];
+    $ym_uid = $_REQUEST['yandex-metrika-id'];
     $data = [
         [
             "name" => "Заявка для расчета стоимости доставки",
@@ -553,6 +556,14 @@ if (isset($_POST['form-delivery'])) {
             ],
             "custom_fields_values" => [
                 [
+                    "field_id" => 366333,
+                    "values" => [
+                        [
+                            "value" => $ym_uid
+                        ]
+                    ]
+                ],
+                [
                     "field_code" => 'UTM_SOURCE',
                     "values" => [
                         [
@@ -589,14 +600,6 @@ if (isset($_POST['form-delivery'])) {
                     "values" => [
                         [
                             "value" => $utm_term
-                        ]
-                    ]
-                ],
-                [
-                    "field_id" => 343599,
-                    "values" => [
-                        [
-                            "value" => $yclid
                         ]
                     ]
                 ],

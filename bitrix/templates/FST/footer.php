@@ -154,6 +154,7 @@
                 <form name="form-type-question" data-formtype="form-type-question" class="ajax-form-send"
                       id="questionForm" action="">
                     <input type="hidden" name="form-type-question" value=""/>
+                    <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                     <div class="form-item-line">
                         <div class="form-item-one width-100">
                             <label>Имя и Фамилия</label>
@@ -206,6 +207,7 @@
                 <form class="ajax-form-send price-thanks" name="form-type-application"
                       data-formtype="form-type-application" id="applicationFormSend" action="">
                     <input type="hidden" name="form-type-application" id="form-type-application" value=""/>
+                    <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                     <div class="form-item-line">
                         <div class="form-item-one width-100">
                             <label>Ваше имя</label>
@@ -262,6 +264,7 @@
                       id="applicationFormSend" action="">
                     <input class="form-type-circle" type="hidden" name="name-form-circle" id="name-form-circle"
                            value=""/>
+                    <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                     <div class="form-item-line">
                         <div class="form-item-one width-100">
                             <label>Ваше имя</label>
@@ -308,6 +311,7 @@
                 <form class="ajax-form-send" name="form-type-application" data-formtype="form-type-application"
                       id="applicationFormSend" action="">
                     <input type="hidden" name="form-type-application" id="form-type-application" value=""/>
+                    <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                     <div class="form-item-line">
                         <div class="form-item-one width-100">
                             <label>Ваше имя</label>

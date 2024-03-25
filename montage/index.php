@@ -242,6 +242,7 @@ $APPLICATION->SetTitle("Инструкция по монтажу гибкого 
                         <div class="calculator">
                             <form class="ajax-form-send" name="form-type-newsletter" data-formtype="form-type-newsletter" action="">
                                 <input type="hidden" name="form-type-newsletter" value=""/>
+                                <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                                 <div class="form-item-line">
                                     <div class="form-item-one width-100">
                                         <label>Имя и Фамилия</label>

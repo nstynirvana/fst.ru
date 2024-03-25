@@ -66,6 +66,7 @@ $APPLICATION->SetTitle("Доставка — FST-KLINKER");
                         <div class="calculator">
                             <form class="ajax-form-send" name="form-delivery" data-formtype="form-delivery" id="deliveryForm" action="">
                                 <input type="hidden" name="form-delivery" id="form-delivery"/>
+                                <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                                 <div class="form-item-line">
                                     <div class="form-item-one width-100">
                                         <label>Имя и Фамилия</label>

@@ -220,6 +220,7 @@ $APPLICATION->SetTitle("Гибкий кирпич FST | Гибкая клинк�
                         <div class="calculator">
                             <form name="form-type-price" data-formtype="form-type-price" class="ajax-form-send" id="feedbackForm" action="">
                                 <input type="hidden" name="form-type-price" value=""/>
+                                <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                                 <div class="form-item-line">
                                     <div class="form-item-one width-60">
                                         <label>Ваше имя</label>
@@ -903,6 +904,7 @@ $APPLICATION->SetTitle("Гибкий кирпич FST | Гибкая клинк�
                         <div class="calculator">
                             <form name="form-type-question" data-formtype="form-type-question" class="ajax-form-send" id="questionForm" action="">
                                 <input type="hidden" name="form-type-question" value=""/>
+                                <input type="hidden" id="yandex-metrika-id" name="yandex-metrika-id" value="">
                                 <div class="form-item-line">
                                     <div class="form-item-one width-100">
                                         <label>Имя и Фамилия</label>

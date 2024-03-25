@@ -1,3 +1,14 @@
+var globalYandexMetrikaId;
+function getYandexMetrikaId(callback) {
+    ym(53915065, 'getClientID', function(clientID) {
+        callback(clientID);
+    });
+}
+getYandexMetrikaId(function(yandexMetrikaId) {
+    globalYandexMetrikaId = yandexMetrikaId;
+    console.log(globalYandexMetrikaId);
+});
+
 $(document).ready(function () {
 
     $("input[type=text]").keydown(function (event) {
@@ -55,12 +66,12 @@ $(document).ready(function () {
 
     $("body").on("submit", ".ajax-form-send", function (event) {
         event.preventDefault();
+        $(this).find("#yandex-metrika-id").val(globalYandexMetrikaId);
         var form = $(this).serialize();
         var formType = $(this).data("formtype");
         var pageUrl = '/amo/amo.php'
 
         $.ajax({
-
             type: "POST",
             url: pageUrl,
             data: form,
