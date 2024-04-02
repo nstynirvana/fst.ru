@@ -23,12 +23,18 @@ $(document).ready(function () {
 
         let width = parseFloat(widthInput);
 
-        let area = 880 * width;
+        let area;
 
         if (isNaN(width)) {
             $('#cost').text('0 ₽');
         } else {
-            let area = 880 * width;
+            if (width <= 100) {
+                area = 990 * width;
+            } else if (width >= 101 && width <= 299) {
+                area = 940 * width;
+            } else {
+                area = 900 * width;
+            }
             // console.log(area);
             $.ajax({
                 type: 'POST',
